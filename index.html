@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inventix - Punto de Venta Inteligente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Inventix</a>
+            <div class="d-flex align-items-center">
+                <!-- Switch personalizado para tema claro/oscuro
+                <label class="switch mb-0 me-2" title="Cambiar tema">
+                    <input id="theme-toggle-checkbox" type="checkbox" />
+                    <span class="slider">
+                        <div class="star star_1"></div>
+                        <div class="star star_2"></div>
+                        <div class="star star_3"></div>
+                        <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+                            <path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff"
+                                d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925">
+                            </path>
+                        </svg>
+                    </span> -->
+                </label>
+                <button class="btn-53" id="open-cart-btn">
+                    <div class="original">Ver Carrito</div>
+                    <div class="letters">
+                        <span>V</span>
+                        <span>E</span>
+                        <span>R</span>
+                        <span>&nbsp;</span>
+                        <span>C</span>
+                        <span>A</span>
+                        <span>R</span>
+                        <span>R</span>
+                        <span>I</span>
+                        <span>T</span>
+                        <span>O</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="main-hero py-5">
+        <div class="container px-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">Tu Negocio, Inteligente</h1>
+                    <p class="lead mb-4">Sistema de punto de venta accesible para pequeños y medianos negocios.</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-start">
+                        <a href="#info-inventix" class="btn btn-primary btn-lg px-4 me-sm-3">Conoce más</a>
+                        <a href="#catalogo-productos-section" class="btn btn-outline-secondary btn-lg px-4">Ver
+                            paquetes</a>
+                        <button type="button" class="btn btn-probar-ahora btn-lg px-4" data-bs-toggle="modal"
+                            data-bs-target="#visorModal">
+                            Probar ahora
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="principal-img-container">
+                        <img src="assets/principal.png" alt="Imagen principal" class="principal-img">
+                    </div>
+                </div>
+    </header>
+
+    <hr class="section-divider">
+
+    <!-- Sección de bienvenida -->
+    <section class="container mb-5 section-small" id="info-inventix">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="principal-img-container">
+                    <img src="assets/secundaria.png" alt="Imagen principal" class="principal-img">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title">Bienvenido a <strong>Inventix</strong></h2>
+                <p class="fs-5">Tu Punto de Venta Inteligente</p>
+                <p>
+                    Inventix es una solución integral de <strong>renta de punto de venta</strong> diseñada para negocios
+                    modernos. Gestiona tus ventas, inventarios y clientes de manera fácil, rápida y sin complicaciones.
+                    Todo esto con un pago <strong>mensual accesible</strong>, sin necesidad de hacer una gran inversión
+                    inicial.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Carrusel de tarjetas informativas -->
+    <section class="container mb-5 section-small">
+        <h2 class="section-title text-center mb-4">Conoce Inventix</h2>
+        <div id="infoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Tarjeta 1: ¿Qué es Inventix? -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="card shadow-sm border-0 p-4">
+                                <!-- <div class="img-placeholder-carrusel mb-3">
+                                    Imagen ¿Qué es Inventix?
+                                </div> -->
+                                <h4 class="mb-3 text-center">¿Qué es Inventix?</h4>
+                                <p class="mb-3 text-start">
+                                    Inventix es una solución integral de renta de punto de venta para negocios modernos.
+                                    Gestiona ventas, inventarios y clientes de manera fácil, rápida y sin
+                                    complicaciones, con un pago mensual accesible.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: ¿Cómo funciona? -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="card shadow-sm border-0 p-4">
+                                <!-- <div class="img-placeholder-carrusel mb-3">
+                                    Imagen ¿Cómo funciona?
+                                </div> -->
+                                <h4 class="mb-3 text-center">¿Cómo funciona?</h4>
+                                <ul class="text-start ps-3 mb-0">
+                                    <li>Renta mensual: contrata nuestro servicio por una pequeña cuota mensual.</li>
+                                    <li>Configuración rápida: te ayudamos a configurar tu sistema desde cero.</li>
+                                    <li>Capacitación incluida: te enseñamos a usarlo paso a paso.</li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: ¿Para qué sirve? -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="card shadow-sm border-0 p-4">
+                                <!-- <div class="img-placeholder-carrusel mb-3">
+                                    Imagen ¿Para qué sirve?
+                                </div> -->
+                                <h4 class="mb-3 text-center">¿Para qué sirve?</h4>
+                                <p class="mb-2 text-start">
+                                    Nuestro punto de venta está pensado para pequeños y medianos negocios como:
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="text-start ps-3 mb-0">
+                                            <li>Tiendas de abarrotes</li>
+                                            <li>Papelerías</li>
+                                            <li>Boutiques</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="text-start ps-3 mb-0">
+                                            <li>Farmacias</li>
+                                            <li>Ferreterías</li>
+                                            <li>Negocios de comida</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: ¿Por qué elegirnos? -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="card shadow-sm border-0 p-4">
+                                <!-- <div class="img-placeholder-carrusel mb-3">
+                                    Imagen ¿Por qué elegirnos?
+                                </div> -->
+                                <h4 class="mb-3 text-center">¿Por qué elegirnos?</h4>
+                                <ul class="text-start ps-3 mb-0">
+                                    <li>Sin contratos forzosos</li>
+                                    <li>Actualizaciones incluidas</li>
+                                    <li>Interfaz sencilla</li>
+                                    <li>Asistencia técnica</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5: Con Inventix puedes -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="card shadow-sm border-0 p-4">
+                                <!-- <div class="img-placeholder-carrusel mb-3">
+                                    Imagen funcionalidades
+                                </div> -->
+                                <h4 class="mb-3 text-center">¿Qué puedes hacer con Inventix?</h4>
+                                <ul class="text-start ps-3 mb-0">
+                                    <li>Registrar ventas rápidamente</li>
+                                    <li>Controlar inventario en tiempo real</li>
+                                    <li>Generar reportes</li>
+                                    <li>Controlar ingresos y egresos</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#infoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#infoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+            <!-- Indicadores del carrusel -->
+            <div class="carousel-indicators" style="bottom: -40px;">
+                <button type="button" data-bs-target="#infoCarousel" data-bs-slide-to="0" class="active bg-primary"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#infoCarousel" data-bs-slide-to="1" class="bg-primary"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#infoCarousel" data-bs-slide-to="2" class="bg-primary"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#infoCarousel" data-bs-slide-to="3" class="bg-primary"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#infoCarousel" data-bs-slide-to="4" class="bg-primary"
+                    aria-label="Slide 5"></button>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Testimonios -->
+    <section class="py-5 bg-section section-small">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Lo que dicen nuestros clientes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <p class="card-text">"Desde que implementamos Inventix, nuestras ventas han aumentado un 20%
+                                y el control de inventario es mucho más preciso."</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">— María López, Papelería "El Estudiante"</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <p class="card-text">"La facilidad de uso y el soporte técnico son excelentes. Recomiendo
+                                Inventix a todos los pequeños negocios."</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">— Carlos Ramírez, Ferretería "El Martillo"</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <p class="card-text">"El sistema en la nube me permite revisar las ventas desde cualquier
+                                lugar. La mejor inversión para mi cafetería."</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">— Ana Martínez, Café "Aroma"</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Catálogo de Paquetes -->
+    <section id="catalogo-productos-section">
+        <div class="container catalogo-container">
+            <h2 class="section-title text-center">Catálogo de Paquetes</h2>
+            <p class="text-center mb-5">Selecciona el plan que mejor se adapte a las necesidades de tu negocio</p>
+            <div class="row g-4" id="catalogo-productos">
+                <!-- Aquí se insertan las cards dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-main text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row align-items-start gy-4">
+                <div class="col-md-4 text-center text-md-start">
+                    <h5 class="footer-title mb-2">Inventix</h5>
+                    <p class="footer-desc mb-0">Tu solución integral para punto de venta</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="footer-title mb-2">Síguenos en redes</h5>
+                    <ul class="footer-social-list list-unstyled d-flex flex-column align-items-center gap-2 mb-0">
+                        <li>
+                            <a href="https://facebook.com/inventix" target="_blank"
+                                class="footer-social-link d-flex align-items-center gap-2">
+                                <span class="footer-social-name">Facebook</span>
+                                <svg width="28" height="28" fill="#1877F3" class="footer-social-icon"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.406.595 24 1.325 24H12.82v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .592 23.406 0 22.675 0" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/inventix" target="_blank"
+                                class="footer-social-link d-flex align-items-center gap-2">
+                                <span class="footer-social-name">Instagram</span>
+                                <svg width="28" height="28" fill="#E4405F" class="footer-social-icon"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.567 5.782 2.295 7.148 2.233 8.414 2.175 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.425 3.678 1.406 2.697 2.387 2.403 3.499 2.344 4.78 2.285 6.06 2.272 6.469 2.272 12c0 5.531.013 5.94.072 7.22.059 1.281.353 2.393 1.334 3.374.981.981 2.093 1.275 3.374 1.334 1.28.059 1.689.072 7.22.072s5.94-.013 7.22-.072c1.281-.059 2.393-.353 3.374-1.334.981-.981 1.275-2.093 1.334-3.374.059-1.28.072-1.689.072-7.22s-.013-5.94-.072-7.22c-.059-1.281-.353-2.393-1.334-3.374C21.393.425 20.281.131 19 .072 17.719.013 17.31 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/inventix" target="_blank"
+                                class="footer-social-link d-flex align-items-center gap-2">
+                                <span class="footer-social-name">Twitter</span>
+                                <svg width="28" height="28" fill="#1DA1F2" class="footer-social-icon"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 0 0-8.384 4.482C7.691 8.095 4.066 6.13 1.64 3.161c-.542.929-.856 2.01-.857 3.17 0 2.188 1.115 4.116 2.823 5.247a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.209c9.057 0 14.009-7.496 14.009-13.986 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.557z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/inventix" target="_blank"
+                                class="footer-social-link d-flex align-items-center gap-2">
+                                <span class="footer-social-name">YouTube</span>
+                                <svg width="28" height="28" fill="#FF0000" class="footer-social-icon"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M23.498 6.186a2.994 2.994 0 0 0-2.108-2.117C19.13 3.5 12 3.5 12 3.5s-7.13 0-9.39.569A2.994 2.994 0 0 0 .502 6.186C0 8.445 0 12 0 12s0 3.555.502 5.814a2.994 2.994 0 0 0 2.108 2.117C4.87 20.5 12 20.5 12 20.5s7.13 0 9.39-.569a2.994 2.994 0 0 0 2.108-2.117C24 15.555 24 12 24 12s0-3.555-.502-5.814zM9.545 15.568V8.432l6.545 3.568-6.545 3.568z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <h5 class="footer-title mb-2">Contacto</h5>
+                    <ul class="footer-contact list-unstyled mb-0">
+                        <li>
+                            <span class="footer-icon">📧</span>
+                            <a href="mailto:contacto@inventix.mx">contacto@inventix.mx</a>
+                        </li>
+                        <li>
+                            <span class="footer-icon">📱</span>
+                            <a href="https://wa.me/525512345678" target="_blank">+52 55 1234 5678</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="text-center small opacity-75">
+                &copy; 2024 Inventix. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+    <!-- Sidebar Carrito de Compras -->
+    <div id="sidebar-cart" class="sidebar-cart">
+        <div class="sidebar-cart-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Carrito de Compras</h5>
+            <button id="close-cart-btn" class="btn-close btn-close-white"></button>
+        </div>
+        <div id="sidebar-cart-body" class="sidebar-cart-body">
+            <p class="text-center text-muted mt-4">Tu carrito está vacío.</p>
+        </div>
+        <div class="sidebar-cart-footer">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span>Total:</span>
+                <span id="sidebar-cart-total" class="fw-bold">$0.00</span>
+            </div>
+            <button class="btn btn-success w-100" id="checkout-btn" disabled>Finalizar compra</button>
+        </div>
+    </div>
+    <div id="sidebar-cart-backdrop" class="sidebar-cart-backdrop"></div>
+    <!-- Modal visor externo fullscreen premium alineado -->
+<div class="modal fade" id="visorModal" tabindex="-1" aria-labelledby="visorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content" style="height: 100vh;">
+            <div class="modal-header d-flex align-items-center justify-content-between" style="z-index:2; border-bottom: none;">
+                <!-- Título a la izquierda -->
+                <h5 class="modal-title fw-bold mb-0" id="visorModalLabel"
+                    style="font-size:2rem; letter-spacing:1px; color:var(--color-azul, #1976d2); text-shadow:0 2px 12px rgba(33,150,243,0.10);">
+                    Probar Inventix
+                </h5>
+                <div class="d-flex align-items-center gap-2">
+                    <!-- Botón de información de acceso a la derecha-->
+                    <button type="button"
+                        class="btn btn-premium-info"
+                        data-bs-toggle="popover"
+                        data-bs-trigger="focus"
+                        title="Datos de acceso"
+                        data-bs-content="Usuario: admin | Contraseña: admin"
+                        aria-label="Mostrar información de acceso">
+                        <span class="info-icon me-2">🔒</span> Mostrar información de acceso
+                    </button>
+                    <!-- Botón cerrar a la derecha -->
+                    <button type="button" class="btn-close ms-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+            </div>
+            <div class="modal-body p-0" style="height: calc(100vh - 80px);">
+                <!-- Visor embebido -->
+                <iframe src="https://aaad-2806-104e-15-22e6-1b38-c696-4e49-5c8.ngrok-free.app/"
+                    width="100%" height="100%"
+                    style="border:0; min-height:100%; display:block;"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Inicialización de popover Bootstrap -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        popoverTriggerList.forEach(function (popoverTriggerEl) {
+            new bootstrap.Popover(popoverTriggerEl)
+        })
+    });
+</script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/productos.js"></script>
+    <script src="assets/app.js"></script>
+    <script>
+        // Script para el switch de tema
+        const themeToggle = document.getElementById('theme-toggle-checkbox');
+        themeToggle.addEventListener('change', function () {
+            document.body.classList.toggle('dark-mode', this.checked);
+        });
+    </script>
+
+</body>
+
+</html>
