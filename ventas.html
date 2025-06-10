@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -128,6 +128,78 @@
             }
         }
     </style>
+</head>
+
+<body>
+    <main class="modulo-container">
+        <div class="modulo-title">Ventas</div>
+        <div class="modulo-desc">
+            Registra y administra tus ventas.<br>
+            Selecciona un producto, indica la cantidad, el cliente y la fecha de la venta.
+        </div>
+         Formulario para registrar venta 
+        <form id="ventaForm" class="crud-form">
+            <div class="form-group">
+                <label for="productoVenta">Producto</label>
+                <select id="productoVenta" required>
+                    <option value="">Selecciona un producto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cantidadVenta">Cantidad</label>
+                <input type="number" id="cantidadVenta" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="clienteVenta">Cliente</label>
+                <input type="text" id="clienteVenta" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaVenta">Fecha</label>
+                <input type="date" id="fechaVenta" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="registrarVentaBtn">Registrar Venta</button>
+        </form>
+        Tabla de ventas
+        <table class="crud-table" id="ventasTabla">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Cliente</th>
+                    <th>Fecha</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                 Ventas dinámicas 
+            </tbody>
+        </table>
+         Botón estilizado para volver a módulos 
+        <button type="button" class="btn btn-volver-profesional" onclick="window.location.href='inven.html'">
+            <span class="volver-icon" aria-hidden="true">
+                 SVG de flecha izquierda
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.5 16L7.5 10L12.5 4" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </span>
+            <span>Volver a módulos</span>
+        </button>
+    </main>
+    <script src="assets/inventario.js"></script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ventas | Inventix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>

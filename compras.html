@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -128,6 +128,86 @@
             }
         }
     </style>
+</head>
+
+<body>
+    <main class="modulo-container">
+        <div class="modulo-title">Compras</div>
+        <div class="modulo-desc">
+            Administra tus órdenes de compra, proveedores y la recepción de mercancía.<br>
+            Puedes agregar, editar y eliminar órdenes de compra.
+        </div>
+         Formulario CRUD 
+        <form id="compraForm" class="crud-form">
+            <div class="form-group">
+                <label for="proveedor">Proveedor</label>
+                <select id="proveedor" required></select>
+            </div>
+            <div class="form-group">
+                <label for="productoCompra">Producto</label>
+                <input type="text" id="productoCompra" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidadCompra">Cantidad</label>
+                <input type="number" id="cantidadCompra" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaCompra">Fecha</label>
+                <input type="date" id="fechaCompra" required>
+            </div>
+            <div class="form-group">
+                <label for="recibidoCompra">Recibido</label>
+                <select id="recibidoCompra" required>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <input type="hidden" id="editIndexCompra">
+            <button type="submit" class="btn btn-primary" id="guardarCompraBtn">Agregar</button>
+            <button type="button" class="btn btn-secondary" id="cancelarCompraBtn" style="display:none;">Cancelar</button>
+        </form>
+        Tabla de compras 
+        <table class="crud-table" id="comprasTabla">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Proveedor</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Fecha</th>
+                    <th>Recibido</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                Compras dinámicas 
+            </tbody>
+        </table>
+        Botón estilizado para volver a módulos 
+        <button type="button" class="btn btn-volver-profesional" onclick="window.location.href='inven.html'">
+            <span class="volver-icon" aria-hidden="true">
+                 SVG de flecha izquierda 
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.5 16L7.5 10L12.5 4" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </span>
+            <span>Volver a módulos</span>
+        </button>
+    </main>
+    <script src="assets/inventario.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Compras | Inventix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
