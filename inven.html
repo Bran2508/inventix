@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Módulos del Sistema | Inventix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Reutiliza tu hoja de estilos -->
+    <link rel="stylesheet" href="../assets/styles.css">
+    <style>
+        .modules-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .module-card {
+            width: 320px;
+            min-height: 370px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: var(--bs-card-bg, #fff);
+            border-radius: 1rem;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .module-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+        }
+        .module-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.2rem;
+            color: var(--bs-primary, #007bff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background: var(--bs-light, #f8f9fa);
+            border-radius: 50%;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+        }
+        .module-title {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--bs-primary, #007bff);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .module-desc {
+            font-size: 1rem;
+            color: #444;
+            text-align: center;
+            margin-bottom: 1.2rem;
+            flex: 1;
+        }
+        .module-card .btn {
+            align-self: center;
+        }
+        @media (max-width: 600px) {
+            .modules-row {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .catalogo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            color: var(--bs-primary, #007bff);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="catalogo-container">
+        <h1 class="section-title">Módulos del Sistema</h1>
+        <div class="modules-row">
+            <!-- Módulo Inventario -->
+            <div class="module-card">
+                <div class="module-icon">📦</div>
+                <div class="module-title">Inventario</div>
+                <div class="module-desc">Gestión de productos, stock, movimientos y alertas de inventario bajo.</div>
+                <a href="inventario.html" class="btn btn-primary">Ver Inventario</a>
+            </div>
+            <!-- Módulo Ventas -->
+            <div class="module-card">
+                <div class="module-icon">🛒</div>
+                <div class="module-title">Ventas</div>
+                <div class="module-desc">Registro de ventas, tickets, clientes y pagos. Consulta de historial.</div>
+                <a href="ventas.html" class="btn btn-primary">Ver Ventas</a>
+            </div>
+            <!-- Módulo Compras -->
+            <div class="module-card">
+                <div class="module-icon">📝</div>
+                <div class="module-title">Compras</div>
+                <div class="module-desc">Órdenes de compra, proveedores y recepción de mercancía.</div>
+                <a href="compras.html" class="btn btn-primary">Ver Compras</a>
+            </div>
+            <!-- Módulo Reportes -->
+            <div class="module-card">
+                <div class="module-icon">📊</div>
+                <div class="module-title">Reportes</div>
+                <div class="module-desc">Reportes de ventas diarias, inventario bajo, compras y más.</div>
+                <a href="reportes.html" class="btn btn-primary">Ver Reportes</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

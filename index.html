@@ -64,7 +64,7 @@
                         <a href="#catalogo-productos-section" class="btn btn-outline-secondary btn-lg px-4">Ver
                             paquetes</a>
                         <button type="button" class="btn btn-probar-ahora btn-lg px-4" data-bs-toggle="modal"
-                            data-bs-target="#visorModal">
+                            data-bs-target="#inventixDemoModal">
                             Probar ahora
                         </button>
                     </div>
@@ -73,6 +73,7 @@
                     <div class="principal-img-container">
                         <img src="assets/principal.png" alt="Imagen principal" class="principal-img">
                     </div>
+
                 </div>
     </header>
 
@@ -305,7 +306,66 @@
             </div>
         </div>
     </section>
-
+    <!-- Development Team Section -->
+    <section class="container mb-5 section-small" id="development-team">
+        <h2 class="section-title text-center mb-4">Nuestro Equipo</h2>
+        <div class="row justify-content-center">
+            <!-- Team Member 1 -->
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm border-0 p-4 text-center">
+                    <img src="assets/ari.jpeg" alt="Member 1" class="img-fluid rounded-circle mb-3"
+                        style="width: 150px; height: 150px;">
+                    <h5 class="mb-1">Karen Ariadna Ceron Sayagua</h5>
+                    <p class="text-muted mb-0">L20281091@toluca.tecnm.mx</p>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm border-0 p-4 text-center">
+                    <img src="assets/karlita.jpeg" alt="Member 2" class="img-fluid rounded-circle mb-3"
+                        style="width: 150px; height: 150px;">
+                    <h5 class="mb-1">Karla Zitlally Rios Villanueva</h5>
+                    <p class="text-muted mb-0">LB22280283@toluca.tecnm.mx</p>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm border-0 p-4 text-center">
+                    <img src="assets/jaque.jpeg" alt="Member 3" class="img-fluid rounded-circle mb-3"
+                        style="width: 150px; height: 150px;">
+                    <h5 class="mb-1">Jaquelin Haydee González González</h5>
+                    <p class="text-muted mb-0">LC18281135@toluca.tecnm.mx</p>
+                </div>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm border-0 p-4 text-center">
+                    <img src="assets/bran.jpeg" alt="Member 4" class="img-fluid rounded-circle mb-3"
+                        style="width: 150px; height: 150px;">
+                    <h5 class="mb-1">Brandon Tonatiuh Romero Ordoñez</h5>
+                    <p class="text-muted mb-0">bromeroo1@toluca.tecnm.mx</p>
+                </div>
+            </div>
+            <!-- Team Member 5 -->
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm border-0 p-4 text-center">
+                    <img src="assets/mon.jpeg" alt="Member 5" class="img-fluid rounded-circle mb-3"
+                        style="width: 150px; height: 150px;">
+                    <h5 class="mb-1">Miriam Montserrat Rojas</h5>
+                    <p class="text-muted mb-0">L20281093@toluca.tecnm.mx</p>
+                </div>
+            </div>
+            <!-- Team Member 6 -->
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm border-0 p-4 text-center">
+                    <img src="assets/abram.jpeg" alt="Member 6" class="img-fluid rounded-circle mb-3"
+                        style="width: 150px; height: 150px;">
+                    <h5 class="mb-1">Abraham Ulises Ramírezes Aguilar</h5>
+                    <p class="text-muted mb-0">L20281103@toluca.tecnm.mx</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer-main text-white pt-5 pb-3">
         <div class="container">
@@ -401,136 +461,17 @@
         </div>
     </div>
     <div id="sidebar-cart-backdrop" class="sidebar-cart-backdrop"></div>
-    <!-- MODAL VISOR EXTERNO FULLSCREEN PREMIUM ALINEADO -->
-    <div class="modal fade" id="visorModal" tabindex="-1" aria-labelledby="visorModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+    <!-- Modal Demo Inventix -->
+    <div class="modal fade" id="inventixDemoModal" tabindex="-1" aria-labelledby="inventixDemoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header d-flex align-items-center justify-content-between">
-                    <h5 class="modal-title fw-bold mb-0" id="visorModalLabel">
-                        Probar Inventix
-                    </h5>
-                    <button type="button" class="btn-close ms-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="inventixDemoModalLabel">Demo Inventix</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
-                <div class="modal-body">
-                    <div id="manual-carousel" style="width:100%;height:100%;position:relative;">
-                        <!-- Páginas del manual -->
-                        <div class="manual-page" data-page="0" style="width:100%;height:100%;">
-                            <div class="manual-modal-row">
-                                <div class="manual-img-col">
-                                    <img src="assets/inicio.PNG" alt="Pantalla principal" class="manual-img">
-                                </div>
-                                <div class="manual-text-col">
-                                    <div class="manual-text-content">
-                                        <h4>Acceso al inventario de prueba</h4>
-                                        <p>Introduce el usuario y la contraseña en los campos correspondientes.
-                                            Al final del proceso, podrás acceder al sistema de
-                                            demostración de Inventix.</p>
-                                    </div>
-                                    <div class="manual-controls">
-                                        <button id="manual-prev-btn" class="btn btn-outline-secondary" disabled>&larr;
-                                            Anterior</button>
-                                        <div id="manual-pagination" class="d-flex gap-1"></div>
-                                        <button id="manual-next-btn" class="btn btn-primary">Siguiente &rarr;</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="manual-page d-none" data-page="1" style="width:100%;height:100%;">
-                            <div class="manual-modal-row">
-                                <div class="manual-img-col">
-                                    <img src="assets/pagina1.PNG" alt="Inventario" class="manual-img">
-                                </div>
-                                <div class="manual-text-col">
-                                    <div class="manual-text-content">
-                                        <h4>Buzon de entrada</h4>
-                                        <p>Al acceder nos mostrara esta pagina, en la cual encontraremos el feedback de
-                                            los
-                                            usuarios, para acceder al inventario daremos click en le icono cuadrado
-                                            ubucado en la
-                                            esquina superior izquierda.</p>
-                                    </div>
-                                    <div class="manual-controls">
-                                        <button id="manual-prev-btn" class="btn btn-outline-secondary">&larr;
-                                            Anterior</button>
-                                        <div id="manual-pagination" class="d-flex gap-1"></div>
-                                        <button id="manual-next-btn" class="btn btn-primary">Siguiente &rarr;</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="manual-page d-none" data-page="2" style="width:100%;height:100%;">
-                            <div class="manual-modal-row">
-                                <div class="manual-img-col">
-                                    <img src="assets/pagina 2.PNG" alt="Reportes" class="manual-img">
-                                </div>
-                                <div class="manual-text-col">
-                                    <div class="manual-text-content">
-                                        <h4>Inventix</h4>
-                                        <p>Visualiza reportes de ventas, ingresos , egresos,
-                                            historial de compras y ofrece promociones personalizadas .</p>
-                                    </div>
-                                    <div class="manual-controls">
-                                        <button id="manual-prev-btn" class="btn btn-outline-secondary">&larr;
-                                            Anterior</button>
-                                        <div id="manual-pagination" class="d-flex gap-1"></div>
-                                        <button id="manual-next-btn" class="btn btn-primary">Siguiente &rarr;</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="manual-page d-none" data-page="3" style="width:100%;height:100%;">
-                            <div class="manual-modal-row">
-                                <div class="manual-img-col">
-                                    <img src="assets/pagina3.PNG" alt="Clientes" class="manual-img">
-                                </div>
-                                <div class="manual-text-col">
-                                    <div class="manual-text-content">
-                                        <h4>Gestión de inventario</h4>
-                                        <p>Administra tu stock, en esta seccion podemos modificar nuestro inventario, como altas, bajas o en stock.</p>
-                                    </div>
-                                    <div class="manual-controls">
-                                        <button id="manual-prev-btn" class="btn btn-outline-secondary">&larr;
-                                            Anterior</button>
-                                        <div id="manual-pagination" class="d-flex gap-1"></div>
-                                        <button id="manual-next-btn" class="btn btn-primary">Siguiente &rarr;</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Última página: acceso y botón externo -->
-                        <div class="manual-page d-none" data-page="4" style="width:100%;height:100%;">
-                            <div class="manual-modal-row">
-                                <div class="manual-img-col">
-                                    <img src="assets/Infinitysoft.jpeg" alt="Clientes" class="manual-img">
-                                </div>
-                                <div class="manual-text-col">
-                                    <div class="manual-text-content text-center" style="width:100%;">
-                                        <h4>¡Listo para probar Inventix?
-                                            Un software creado por INFINITYSOFT
-                                        </h4>
-                                        <p class="mb-3">Accede al sistema de demostración con los siguientes datos:</p>
-                                        <div class="mb-3">
-                                            <span class="badge bg-secondary fs-6">Usuario: <strong>admin</strong></span>
-                                            <span class="badge bg-secondary fs-6 ms-2">Contraseña:
-                                                <strong>admin</strong></span>
-                                        </div>
-                                        <a href="https://4226-2806-104e-15-22e6-26a6-e9ed-faae-dba9.ngrok-free.app/"
-                                            target="_blank" class="btn btn-primary btn-lg">
-                                            Abrir Inventix Demo
-                                        </a>
-                                        <!-- <p class="mt-3 text-muted small">* El acceso se abrirá en una nueva pestaña.</p> -->
-                                    </div>
-                                    <div class="manual-controls">
-                                        <button id="manual-prev-btn" class="btn btn-outline-secondary">&larr;
-                                            Anterior</button>
-                                        <div id="manual-pagination" class="d-flex gap-1"></div>
-                                        <button id="manual-next-btn" class="btn btn-primary">Finalizar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- NOTA: Los botones de paginación deben ser gestionados por JS para habilitar/deshabilitar según la página -->
-                    </div>
+                <div class="modal-body p-0" style="height: 80vh;">
+                    <iframe src="inven.html" width="100%" height="100%" style="border:0; min-height: 70vh;"></iframe>
                 </div>
             </div>
         </div>

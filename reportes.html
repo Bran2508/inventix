@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reportes | Inventix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <style>
+        .modulo-container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            background: var(--bs-card-bg, #fff);
+            border-radius: 1rem;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+            padding: 2.5rem 2rem;
+        }
+
+        .modulo-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--bs-primary, #007bff);
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2563eb;
+            margin: 2.5rem 0 1rem 0;
+        }
+
+        .crud-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+
+        .crud-table th,
+        .crud-table td {
+            border: 1px solid #e0e0e0;
+            padding: 0.7rem 0.5rem;
+            text-align: center;
+        }
+
+        .crud-table th {
+            background: var(--bs-light, #f8f9fa);
+            color: var(--bs-primary, #007bff);
+        }
+
+        .crud-table tr:nth-child(even) {
+            background: #f6f8fa;
+        }
+
+        .btn-volver-profesional {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6em;
+            background: linear-gradient(90deg, #e0e7ff 0%, #f1f5f9 100%);
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 1.08rem;
+            border: none;
+            border-radius: 0.7em;
+            padding: 0.7em 1.5em;
+            box-shadow: 0 2px 12px rgba(37, 99, 235, 0.07);
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s, transform 0.12s;
+            margin: 2rem auto 0 auto;
+        }
+
+        .btn-volver-profesional:hover,
+        .btn-volver-profesional:focus {
+            background: linear-gradient(90deg, #dbeafe 0%, #e0e7ff 100%);
+            box-shadow: 0 4px 18px rgba(37, 99, 235, 0.13);
+            transform: translateY(-2px) scale(1.03);
+            color: #1d4ed8;
+            outline: none;
+        }
+
+        .volver-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .charts-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .chart-container {
+            background: #f8fafc;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+            margin-bottom: 2rem;
+            width: 480px;
+            min-width: 320px;
+        }
+
+        @media (max-width: 1100px) {
+            .charts-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .chart-container {
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <main class="modulo-container">
+        <div class="modulo-title">Reportes</div>
+
+        <!-- Reporte de ventas diarias -->
+        <div class="section-title">Ventas Diarias</div>
+        <table class="crud-table" id="tablaVentasDiarias">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Total Ventas</th>
+                    <th>Cantidad de Ventas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dinámico -->
+            </tbody>
+        </table>
+
+        <!-- Reporte de inventario bajo -->
+        <div class="section-title">Inventario Bajo</div>
+        <table class="crud-table" id="tablaInventarioBajo">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dinámico -->
+            </tbody>
+        </table>
+
+        <!-- Reporte de compras -->
+        <div class="section-title">Órdenes de Compra</div>
+        <table class="crud-table" id="tablaCompras">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Proveedor</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Recibido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dinámico -->
+            </tbody>
+        </table>
+
+        <!-- Gráficas -->
+        <div class="section-title">Gráficas</div>
+        <div class="charts-row">
+            <div class="chart-container">
+                <canvas id="graficaVentas"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="graficaInventario"></canvas>
+            </div>
+        </div>
+
+        <!-- Botón estilizado para volver a módulos -->
+        <button type="button" class="btn btn-volver-profesional" onclick="window.location.href='inven.html'">
+            <span class="volver-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.5 16L7.5 10L12.5 4" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </span>
+            <span>Volver a módulos</span>
+        </button>
+    </main>
+    <script src="assets/inventario.js"></script>
+    <script>
+        // --- Reporte de Ventas Diarias ---
+        function agruparVentasPorFecha(ventas, productos) {
+            const resumen = {};
+            ventas.forEach(v => {
+                if (!resumen[v.fecha]) resumen[v.fecha] = { total: 0, cantidad: 0 };
+                const prod = productos[v.productoIdx];
+                const precio = prod ? prod.precio : 0;
+                resumen[v.fecha].total += precio * v.cantidad;
+                resumen[v.fecha].cantidad += 1;
+            });
+            return resumen;
+        }
+        function renderTablaVentasDiarias() {
+            const tbody = document.querySelector("#tablaVentasDiarias tbody");
+            tbody.innerHTML = "";
+            const resumen = agruparVentasPorFecha(window.ventas, window.productos);
+            const fechas = Object.keys(resumen).sort();
+            if (fechas.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="3" style="color:#888;">No hay ventas registradas.</td></tr>`;
+                return;
+            }
+            fechas.forEach(fecha => {
+                const r = resumen[fecha];
+                tbody.innerHTML += `<tr>
+                    <td>${fecha}</td>
+                    <td>$${r.total.toFixed(2)}</td>
+                    <td>${r.cantidad}</td>
+                </tr>`;
+            });
+        }
+
+        // --- Reporte de Inventario Bajo (stock <= 5) ---
+        function renderTablaInventarioBajo() {
+            const tbody = document.querySelector("#tablaInventarioBajo tbody");
+            tbody.innerHTML = "";
+            const bajos = window.productos.filter(p => p.stock <= 5);
+            if (bajos.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="3" style="color:#888;">No hay productos con inventario bajo.</td></tr>`;
+                return;
+            }
+            bajos.forEach(p => {
+                tbody.innerHTML += `<tr>
+                    <td>${p.nombre}</td>
+                    <td>${p.categoria}</td>
+                    <td>${p.stock}</td>
+                </tr>`;
+            });
+        }
+
+        // --- Reporte de Compras ---
+        function renderTablaCompras() {
+            const tbody = document.querySelector("#tablaCompras tbody");
+            tbody.innerHTML = "";
+            if (!window.compras || window.compras.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="5" style="color:#888;">No hay órdenes de compra registradas.</td></tr>`;
+                return;
+            }
+            window.compras.forEach(c => {
+                tbody.innerHTML += `<tr>
+                    <td>${c.fecha}</td>
+                    <td>${c.proveedor}</td>
+                    <td>${c.producto}</td>
+                    <td>${c.cantidad}</td>
+                    <td>${c.recibido}</td>
+                </tr>`;
+            });
+        }
+
+        // --- Gráfica de Ventas por Día ---
+        function renderGraficaVentas() {
+            const ctx = document.getElementById('graficaVentas').getContext('2d');
+            const resumen = agruparVentasPorFecha(window.ventas, window.productos);
+            const fechas = Object.keys(resumen).sort();
+            const totales = fechas.map(f => resumen[f].total);
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: fechas,
+                    datasets: [{
+                        label: 'Total de Ventas ($)',
+                        data: totales,
+                        backgroundColor: '#2563eb'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false },
+                        title: { display: true, text: 'Ventas por Día' }
+                    }
+                }
+            });
+        }
+
+        // --- Gráfica de Inventario por Producto ---
+        function renderGraficaInventario() {
+            const ctx = document.getElementById('graficaInventario').getContext('2d');
+            const productos = window.productos.map(p => p.nombre);
+            const stocks = window.productos.map(p => p.stock);
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: productos,
+                    datasets: [{
+                        label: 'Stock',
+                        data: stocks,
+                        backgroundColor: '#10b981'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false },
+                        title: { display: true, text: 'Stock por Producto' }
+                    }
+                }
+            });
+        }
+
+        // --- Inicialización ---
+        document.addEventListener('DOMContentLoaded', function () {
+            renderTablaVentasDiarias();
+            renderTablaInventarioBajo();
+            renderTablaCompras();
+            renderGraficaVentas();
+            renderGraficaInventario();
+        });
+    </script>
+</body>
+
+</html>
